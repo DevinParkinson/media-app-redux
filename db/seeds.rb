@@ -5,7 +5,7 @@ featured = [true, false]
   App.create(
     name: Faker::App.name,
     description: Faker::MostInterestingManInTheWorld.quote,
-    logo: Faker::Company.logo,
+    logo: Faker::Avatar.image,
   )
 end
 puts "Seeded"
