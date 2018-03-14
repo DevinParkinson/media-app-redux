@@ -45,7 +45,7 @@ class AppForm extends React.Component {
           name="description"
           defaultValue={description}
           onChange={this.handleChange}
-          label="Description"
+          label="What's on your mind?"
         />
         <Form.Button>Save</Form.Button>
       </Form>

@@ -8,7 +8,7 @@ const AppView = ({ app = {} }) => (
     <Link to="/apps">View All Apps</Link>
     <Header as="h3" textAlign="center">{app.name}</Header>
     <Image src={app.logo} />
-    <Table definition>
+    <Table>
       <Table.Header>
         <Table.Row>
           <Table.HeaderCell />
@@ -18,12 +18,8 @@ const AppView = ({ app = {} }) => (
 
       <Table.Body>
         <Table.Row>
-          <Table.Cell>Description</Table.Cell>
+          <Table.Cell>Says:</Table.Cell>
           <Table.Cell>{app.description}</Table.Cell>
-        </Table.Row>
-        <Table.Row>
-          <Table.Cell>Author</Table.Cell>
-          <Table.Cell>{app.author}</Table.Cell>
         </Table.Row>
       </Table.Body>
     </Table>

@@ -37,8 +37,11 @@ class Apps extends React.Component {
           </Card.Header>
         </Card.Content>
         <Card.Content extra>
+        <Card.Description>
+          {app.description}
+        </Card.Description>
           <Link to={`/apps/${app.id}`}>
-            View App
+            View Post
           </Link>
         </Card.Content>
       </Card>
